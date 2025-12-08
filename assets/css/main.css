@@ -5583,7 +5583,7 @@ html.lenis body {
   }
 }
 .rs-banner-five .banner-title {
-  font-size: 180px;
+  font-size: 140px;
   font-weight: 400;
   color: var(--rs-white);
   text-transform: uppercase;
@@ -5592,22 +5592,22 @@ html.lenis body {
 }
 @media only screen and (max-width: 1600px) {
   .rs-banner-five .banner-title {
-    font-size: 150px;
+    font-size: 120px;
   }
 }
 @media only screen and (max-width: 1366px) {
   .rs-banner-five .banner-title {
-    font-size: 130px;
+    font-size: 100px;
   }
 }
 @media only screen and (max-width: 1199px) {
   .rs-banner-five .banner-title {
-    font-size: 110px;
+    font-size: 80px;
   }
 }
 @media only screen and (max-width: 991px) {
   .rs-banner-five .banner-title {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 @media only screen and (max-width: 767px) {
