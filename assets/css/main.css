@@ -2347,7 +2347,7 @@ textarea:focus {
   visibility: hidden;
 }
 .offcanvas-overlay:hover {
-  cursor: url(../images/shape/cross-out.png), pointer;
+  /* cursor: url(../images/shape/cross-out.png), pointer; */
 }
 .offcanvas-overlay.overlay-open {
   opacity: 1;
@@ -3880,7 +3880,7 @@ html.lenis body {
   height: 20px;
 }
 .rs-list-item ul li svg path {
-  fill: var(--rs-theme-primary);
+  fill: var(--rs-theme-purple);
 }
 .rs-list-item ul li i {
   border: 2px solid var(--rs-theme-blue);
@@ -10402,7 +10402,8 @@ html.lenis body {
   }
 }
 .rs-services-details .services-details-left {
-  max-width: 770px;
+  width: 930px;
+  /* max-width: 930px; */
 }
 @media only screen and (max-width: 480px) {
   .rs-services-details .rs-list-item ul li {
@@ -11019,7 +11020,7 @@ html.lenis body {
   color: var(--rs-title-primary);
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 0.8;
+  /* line-height: 0.8; */
 }
 @media only screen and (max-width: 1600px) {
   .rs-portfolio-four .text-slide-wrapper .text-slide-title {
@@ -11049,7 +11050,7 @@ html.lenis body {
 .rs-portfolio-four .text-slide-two {
   margin-inline-start: 330px;
   overflow: hidden;
-  margin-top: 35px;
+  margin-top: -40px;
 }
 @media only screen and (max-width: 1366px) {
   .rs-portfolio-four .text-slide-two {
@@ -11074,6 +11075,7 @@ html.lenis body {
 .rs-portfolio-four .portfolio-btn {
   display: flex;
   justify-content: end;
+  margin-top: 30px;
 }
 @media only screen and (max-width: 991px) {
   .rs-portfolio-four .portfolio-btn {
@@ -12771,7 +12773,7 @@ html.lenis body {
   margin: 0 auto;
   font-weight: 500;
   line-height: 1.5;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   color: var(--rs-white);
 }
 @media only screen and (max-width: 1600px) {

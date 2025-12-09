@@ -7,8 +7,8 @@
         gsap_rs_scrollRotate();
         gsap_rs_MoveOnScroll();
         gsap_rs_custom_cursor();
-        // gsap_rs_image_reveal();
-        // gsap_fixed_elements();
+        gsap_rs_image_reveal();
+        gsap_fixed_elements();
     });
 
     // Split Text
