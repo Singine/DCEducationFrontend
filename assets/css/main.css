@@ -1170,6 +1170,13 @@ textarea:focus {
   background: var(--rs-theme-primary);
   border-color: var(--rs-theme-primary);
 }
+.rs-accordion-three .accordion-button:not(.collapsed) .accordion-icon.has-bg-purple {
+  background: var(--rs-theme-purple-light);
+  border-color: var(--rs-theme-purple-light);
+}
+.rs-accordion-three .accordion-button:not(.collapsed) .accordion-icon.has-bg-purple svg path{
+  fill: var(--rs-white);
+}
 .rs-accordion-three .accordion-button:not(.collapsed) .accordion-icon svg {
   transform: rotate(90deg);
 }
@@ -1186,6 +1193,11 @@ textarea:focus {
   transition: all 0.4s ease-out 0s;
   background: rgba(201, 243, 29, 0.2196078431);
 }
+
+.rs-accordion-three .accordion-icon.has-bg-purple {
+  background: rgba(43, 29, 243, 0.22);
+}
+
 .rs-accordion-three .accordion-icon svg {
   width: 16px;
 }
@@ -14204,6 +14216,10 @@ html.lenis body {
   position: relative;
   z-index: 1;
 }
+
+.rs-work-process-two.has-bg-purple .work-process-item {
+  text-align: left;
+}
 @media only screen and (max-width: 767px) {
   .rs-work-process-two .work-process-item {
     padding: 20px;
@@ -14729,4 +14745,8 @@ html.lenis body {
 
 .header-hamburger a{
   color: var(--rs-white);
+}
+
+.fontWeightNormal {
+  font-weight: normal !important;
 }
