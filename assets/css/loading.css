@@ -22,7 +22,7 @@
 /* 外轮廓描边渐现（从顶部开始画完整轮廓） */
 .outline-path {
   fill: none;
-  stroke: #022b9a;
+  stroke: #5D5AD6;
   stroke-width: 15;
   stroke-linecap: round;
   stroke-dasharray: 2500; /* 路径总长估算 */

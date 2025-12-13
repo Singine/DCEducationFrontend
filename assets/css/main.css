@@ -131,6 +131,8 @@
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,800");
 @import url("https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap");
 .offcanvas-overlay, a,
 .btn,
@@ -176,8 +178,6 @@ h6 {
     font-display: swap; /* 强烈推荐加这行！文字先显示，字体加载完再替换 */
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,800");
 
 :root {
   /**  @font family declaration */
@@ -196,6 +196,7 @@ h6 {
   --rs-theme-purple-light: #675AE8;
   --rs-theme-DCblue: #022B9A;
   --rs-text-primary: #666666;
+  --rs-title-white: #FFFFFF;
   --rs-title-primary: #10171E;
   --rs-title-secondary: #3B3663;
   --rs-bg-primary: #F0F5DA;
@@ -3546,7 +3547,7 @@ input[type=checkbox] ~ label:hover {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background: var(--rs-theme-primary);
+  background: var(--rs-theme-purple-light);
   transform: translate(-50%);
 }
 
@@ -6640,7 +6641,7 @@ html.lenis body {
   border-radius: 10px;
   position: relative;
   z-index: 1;
-  border-left: 7px solid var(--rs-theme-primary);
+  border-left: 7px solid var(--rs-theme-purple-light);
 }
 @media only screen and (max-width: 480px) {
   .rs-postbox-quote blockquote {
@@ -6712,10 +6713,10 @@ html.lenis body {
   font-family: remixicon;
   position: absolute;
   font-size: 18px;
-  color: var(--rs-theme-primary);
+  color: var(--rs-theme-purple);
   width: 22px;
   height: 22px;
-  border: 2px solid var(--rs-theme-primary);
+  border: 2px solid var(--rs-theme-purple);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -6776,7 +6777,7 @@ html.lenis body {
   position: absolute;
   inset-inline-start: 30px;
   top: 0;
-  background: var(--rs-theme-primary);
+  background: var(--rs-theme-purple-light);
 }
 @media only screen and (max-width: 1199px) {
   .sidebar-widget {
@@ -6830,9 +6831,9 @@ html.lenis body {
   font-size: 17px;
 }
 .sidebar-widget.widget-categories-two ul li a:hover {
-  background: var(--rs-theme-primary);
-  border-color: var(--rs-theme-primary);
-  color: var(--rs-title-primary);
+  background: var(--rs-theme-purple-light);
+  border-color: var(--rs-theme-purple-light);
+  color: var(--rs-title-white);
 }
 .sidebar-widget.widget-categories-two ul li i {
   font-size: 20px;
@@ -7212,9 +7213,9 @@ html.lenis body {
   border-radius: 5px;
 }
 .tagcloud a:hover {
-  color: var(--rs-title-primary);
-  background-color: var(--rs-theme-primary);
-  border-color: var(--rs-theme-primary);
+  color: var(--rs-title-white);
+  background-color: var(--rs-theme-purple-light);
+  border-color: var(--rs-theme-purple-light);
 }
 
 /*----------------------------------------*/
@@ -14930,4 +14931,8 @@ html.lenis body {
 
 .rs-circle-btn.has-bg-purple svg path{
   fill: white;
+}
+
+.rs-text-circle.rs-text-white span{
+  color: var(--rs-white)!important;
 }
