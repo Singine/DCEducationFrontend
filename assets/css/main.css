@@ -192,6 +192,7 @@ h6 {
   --rs-light: #eee;
   --rs-theme-primary: #C9F31D;
   --rs-theme-secondary: #10171E;
+  --rs-theme-orange: rgb(255, 203, 5);
   --rs-theme-purple: #5D5AD6;
   --rs-theme-purple-light: #675AE8;
   --rs-theme-DCblue: #022B9A;
@@ -1178,6 +1179,10 @@ textarea:focus {
   background: var(--rs-theme-purple-light);
   border-color: var(--rs-theme-purple-light);
 }
+.rs-accordion-three .accordion-button:not(.collapsed) .accordion-icon.has-bg-orange {
+  background: var(--rs-theme-orange);
+  border-color: var(--rs-theme-orange);
+}
 .rs-accordion-three .accordion-button:not(.collapsed) .accordion-icon.has-bg-purple svg path{
   fill: var(--rs-white);
 }
@@ -1200,6 +1205,9 @@ textarea:focus {
 
 .rs-accordion-three .accordion-icon.has-bg-purple {
   background: rgba(43, 29, 243, 0.22);
+}
+.rs-accordion-three .accordion-icon.has-bg-orange {
+  background: rgba(255, 203, 5, 0.22);
 }
 
 .rs-accordion-three .accordion-icon svg {
@@ -1420,6 +1428,10 @@ textarea:focus {
   background: var(--rs-theme-purple);
   color: var(--rs-white);
 }
+.rs-btn.has-bg-orange {
+  background: var(--rs-theme-orange);
+  color: var(--rs-white);
+}
 .rs-btn.has-bg-white {
   background: var(--rs-white);
 }
@@ -1627,6 +1639,9 @@ textarea:focus {
   animation: 0.6s btnHoverEffectReverse;
   inset-inline-start: 0;
 }
+.rs-button-wrapper .rs-icon.has-bg-orange {
+  background: var(--rs-theme-orange);
+}
 .rs-button-wrapper .rs-icon svg {
   width: 16px;
   height: 16px;
@@ -1634,6 +1649,8 @@ textarea:focus {
 .rs-button-wrapper .rs-icon svg path {
   fill: var(--rs-white);
 }
+
+
 .rs-button-wrapper .rs-btn-text {
   transform: translate3d(0, 0, 0);
   transform-style: preserve-3d;
@@ -2200,28 +2217,28 @@ textarea:focus {
   color: #acd601;
 }
 .offcanvas-area.has-theme-orange .offcanvas-close {
-  background: #FA6E46;
+  background: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .offcanvas-close-icon {
   color: var(--rs-white);
 }
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li.active > a {
-  color: var(--rs-theme-purple);
+  color: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li a.active {
-  color: var(--rs-theme-purple);
+  color: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li a:hover,
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li span:hover {
-  color: var(--rs-theme-purple);
+  color: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li.dropdown-opened > a,
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li.dropdown-opened > span {
-  color: var(--rs-theme-purple);
+  color: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li.dropdown-opened > a.mean-expand.mean-clicked,
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li.dropdown-opened > span.mean-expand.mean-clicked {
-  background: var(--rs-theme-purple);
+  background: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li.dropdown-opened > a.mean-expand.mean-clicked i,
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li.dropdown-opened > span.mean-expand.mean-clicked i {
@@ -2229,22 +2246,22 @@ textarea:focus {
 }
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li a.mean-expand:hover,
 .offcanvas-area.has-theme-orange .mean-container .mean-nav ul li span.mean-expand:hover {
-  background: var(--rs-theme-purple);
+  background: var(--rs-theme-orange);
   color: var(--rs-white);
 }
 .offcanvas-area.has-theme-orange .offcanvas-contact-text a:hover {
-  color: #FA6E46;
+  color: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .offcanvas-contact-icon svg path {
-  fill: #FA6E46;
+  fill: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-orange .offcanvas-social ul li a:hover {
-  background: #FA6E46;
-  border-color: #FA6E46;
+  background: var(--rs-theme-orange);
+  border-color: var(--rs-theme-orange);
   color: var(--rs-white);
 }
 .offcanvas-area.has-theme-orange .mobile-menu.mean-container .menu-item:hover .title {
-  color: var(--rs-theme-purple);
+  color: var(--rs-theme-orange);
 }
 .offcanvas-area.has-theme-purple .offcanvas-close {
   background: var(--rs-theme-purple);
@@ -2988,7 +3005,7 @@ input[type=checkbox] ~ label:hover {
   opacity: 0.8;
 }
 .backtotop-wrap.has-bg-orange {
-  background: #FA6E46;
+  background: var(--rs-theme-orange);
   color: var(--rs-white);
 }
 .backtotop-wrap.has-bg-purple {
@@ -5680,7 +5697,8 @@ html.lenis body {
 }
 .rs-banner-five .banner-wrapper {
   padding: 50px 0px 0px 80px;
-  background: var(--rs-theme-secondary);
+  /* background: var(--rs-theme-secondary); */
+  background: rgb(16 23 30 / 51%);
 }
 @media only screen and (max-width: 1199px) {
   .rs-banner-five .banner-wrapper {
@@ -5974,6 +5992,47 @@ html.lenis body {
 .rs-header-area.has-purple-bg-dark .main-menu > ul > li:hover > a::after {
   color: var(--rs-theme-purple);
 }
+
+.rs-header-area.has-orange-bg-dark {
+  background: var(--rs-theme-secondary);
+}
+.rs-header-area.has-orange-bg-dark .main-menu ul li.active > a {
+  color: var(--rs-theme-orange);
+}
+.rs-header-area.has-orange-bg-dark .main-menu ul li a.active {
+  color: var(--rs-theme-orange);
+}
+.rs-header-area.has-orange-bg-dark .main-menu li a {
+  color: var(--rs-white);
+}
+.rs-header-area.has-orange-bg-dark .main-menu .submenu {
+  background: #151D25;
+}
+.rs-header-area.has-orange-bg-dark .main-menu .submenu li:hover > a {
+  color: var(--rs-theme-orange);
+}
+.rs-header-area.has-orange-bg-dark .main-menu .submenu li a {
+  color: var(--rs-white);
+}
+.rs-header-area.has-orange-bg-dark .main-menu .submenu li a:hover {
+  color: var(--rs-theme-orange);
+}
+.rs-header-area.has-orange-bg-dark .main-menu .submenu li a.active {
+  color: var(--rs-theme-orange);
+}
+.rs-header-area.has-orange-bg-dark .main-menu .submenu li:not(:last-child) {
+  border-color: rgba(255, 255, 255, 0.0509803922);
+}
+.rs-header-area.has-orange-bg-dark .main-menu > ul > li:hover > a {
+  color: var(--rs-theme-orange);
+}
+.rs-header-area.has-orange-bg-dark .main-menu > ul > li:hover > a::after {
+  color: var(--rs-theme-orange);
+}
+
+
+
+
 .rs-header-area.has-green-dark .main-menu ul li.active > a {
   color: #acd601;
 }
@@ -6642,6 +6701,11 @@ html.lenis body {
   position: relative;
   z-index: 1;
   border-left: 7px solid var(--rs-theme-purple-light);
+}
+
+.rs-postbox-quote.has-bg-orange blockquote {
+
+  border-left: 7px solid var(--rs-theme-orange);
 }
 @media only screen and (max-width: 480px) {
   .rs-postbox-quote blockquote {
@@ -10482,6 +10546,14 @@ html.lenis body {
 .rs-text-slide-one.has-bg-purple .text-slide-title {
   color: var(--rs-white);
 }
+
+.rs-text-slide-one.has-bg-orange {
+  background: var(--rs-theme-orange);
+}
+.rs-text-slide-one.has-bg-orange .text-slide-title {
+  color: var(--rs-white);
+}
+
 .rs-text-slide-two {
   overflow-x: clip;
   position: relative;
@@ -13295,6 +13367,15 @@ html.lenis body {
 .rs-job-one .job-item:hover .job-title {
   color: #acd601;
 }
+.rs-job-one.rs-bg-orange .job-item:hover {
+  background: rgba(245, 240, 218, 0.58);
+}
+.rs-job-one.rs-bg-orange .job-item:hover .job-number {
+  color: var(--rs-theme-orange);
+}
+.rs-job-one.rs-bg-orange .job-item:hover .job-title {
+  color: var(--rs-theme-orange);
+}
 .rs-job-one .job-item:hover .job-meta-wrapper span:first-child {
   border-color: var(--rs-white);
 }
@@ -13306,6 +13387,16 @@ html.lenis body {
   height: 50px;
   border-radius: 0;
   background: rgba(201, 243, 29, 0.3215686275);
+}
+.rs-job-one.rs-bg-orange .job-btn .rs-btn-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  background: rgba(243, 204, 29, 0.322);
+}
+.rs-job-one.rs-bg-orange .job-btn .rs-btn-circle:hover {
+
+  background: var(--rs-theme-orange);
 }
 .rs-job-one .job-btn .rs-btn-circle svg {
   width: 16px;
@@ -13361,6 +13452,9 @@ html.lenis body {
 }
 .rs-job-one .job-title a:hover {
   color: #acd601;
+}
+.rs-job-one.rs-bg-orange .job-title a:hover {
+  color: var(--rs-theme-orange);
 }
 .rs-job-one .job-meta-wrapper {
   position: relative;
@@ -13598,7 +13692,7 @@ html.lenis body {
   flex-wrap: wrap;
   gap: 15px;
   transition: all 0.5s ease;
-}
+} 
 @media only screen and (max-width: 1600px) {
   .rs-award-one .award-item a {
     padding: 30px 30px 30px 30px;
